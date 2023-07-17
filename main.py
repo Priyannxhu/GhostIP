@@ -15,7 +15,9 @@ def geolocate_ip(ip):
         longitude = data.get('longitude', 'Unknown')
 
         figlet = pyfiglet.Figlet()
-        print(figlet.renderText("Ghost IP"))
+        print(figlet.renderText("IP Geolocation"))
+
+        print("Geolocating IP...\n")
         print(f"IP: {ip}")
         print(f"Country: {country}")
         print(f"City: {city}")
@@ -27,5 +29,10 @@ def geolocate_ip(ip):
         print("Unable to geolocate IP.")
 
 # Example usage
+figlet = pyfiglet.Figlet()
+print(figlet.renderText("IP Geolocation"))
+
 ip_address = input("Enter IP address to geolocate: ")
+print()
+
 geolocate_ip(ip_address)
