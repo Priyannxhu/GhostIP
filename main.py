@@ -30,7 +30,7 @@ def geolocate_ip(ip):
 
 # Example usage
 figlet = pyfiglet.Figlet()
-print(figlet.renderText("IP Geolocation"))
+print(figlet.renderText("Ghost IP"))
 
 ip_address = input("Enter IP address to geolocate: ")
 print()
